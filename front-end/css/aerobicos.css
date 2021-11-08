@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Arial"
+}
+
+section{
+    width: 100%;
+    min-height: 90vh;
+    display: grid;
+    place-items: center;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section:nth-of-type(1){
+    background-image: url("../assets/aerobicos01.jpg");
+}
+
+section:nth-of-type(3){
+    background-image: url("../assets/aerobicos02.jpg");
+}
+
+section:nth-of-type(5){
+    background-image: url("../assets/aerobicos03.jpg");
+}
+
+section p{
+    font-size: 25px;
+    color: rgb(80,80,80);
+    text-align: center;
+    width: 100%;
+    padding: 2%;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/content.css">
+    <link rel="stylesheet" href="./css/slider.css">
+    <link rel="stylesheet" href="./css/main-footer.css">
+   
+    <title>iBody</title>
+</head>
+
+<body>
+
+   <header id="header">
+      <a id="logo" href="./home.html">iBody</a>
+      <nav id="nav">
+        <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
+          <span id="hamburger"></span>
+        </button>
+        <ul id="menu" role="menu">
+          <li><a href="./home.html">Home</a></li>
+          <li><a href="./aerobicos.html">Aeróbicos</a></li>
+          <li><a href="./anaeróbicos.html">Anaerobicos</a></li>
+          <li><a href="./esportes.html">Esportes</a></li>
+        
+        </ul>
+      </nav>
+    </header>
+
+    </div>
+
+    <div class="slider">
+      <img src="./assets/img01 (2).jpg" alt="img1" class="img__slider active" />
+      <img src="./assets/img02.jpg" alt="img2" class="img__slider" />
+      <img src="./assets/img03.jpg" alt="img3" class="img__slider" />
+      <div class="suivant">
+          <i class="fas fa-chevron-circle-right"></i>
+      </div>
+      <div class="precedent">
+          <i class="fas fa-chevron-circle-left"></i>
+      </div>
+  </div>
+  
+  <div class="content">
+   <br><br>
+     <h2>Introdução ao Projeto</h2>
+     <br><br>
+     <p>
+      O projeto <b>iBody</b> é um projeto de cunho filantrópico e origem acadêmica, com intuito de construir um site utilizando-se de exclusivamente JavaScript, HTML e CSS. <br><br>
+      Para realizá-lo, foi feito uma pesquisa por conteúdos que cresceram durante à crise da pandemia covid-19. E com o crescimento de atividades em domicílio, influenciadas principalmente pelo distanciamento social e <i> lockdown </i>, sendo encontrados alguns temas de suma importância. Entre elas, encontramos sobre a prática de atividades físicas, que estavam sendo muito prejudicadas. <br><br>
+      Dessa forma, realizamos o trabalho juntando conceitos aprendidos em sala de aula, que vão de planejamento do projeto, análise de requisições, cálculo de horas para sua realização, o desenvolvimento do projeto e sua conclusão. Durante o desenvolvimento, misturou-se conceitos técnicos com boas práticas de programação, sempre aliando o layout das páginas com a melhor experiência de usuário possível. <br><br>
+      Nosso projeto tem por proposta explicar, de maneira sucinta e fácil, as atividades e seus benefícios. Além disso, é sempre muito importante estarmos ciente sobre o condicionamento físico atual. Sendo assim, criamos um calculador de IMC (Índice de Massa Corporal), que indica qual é a situação física atual. O cálculo é feito através da fórmula de peso divido por altura ao quadrado. <br><br>
+      Segue abaixo a listagem das métricas que o IMC indica: <br><br>
+   </p> 
+
+   <ul>
+      <li><b>Menor que 18.5 =</b> Magreza ou Obesidade Grau 0</li>
+      <li><b>Menor que 18.5 =</b> Magreza ou Obesidade Grau 0</li>
+      <li><b>Entre 25 a 29.9 = </b>Sobrepeso ou Obesidade Grau 1</li>
+      <li><b>Entre 30 a 39.9 = </b>Obesidade ou Obesidade Grau 2</li>
+      <li><b>Maior que 40 =</b> Obesidade Grave ou Obesidade Grau 3</li>
+   </ul>
+
+   <p><br><br> Faça um cálculo rápido do seu IMC e saiba qual condicionamento físico você se encontra. Lembre-se de atirar as notificações do site, já que o site utiliza o alerta nativo do navegador para mostrar o resultado!<br><br></p>
+  </div>
+
+  <div class="imc">  
+   <form class="imc">
+       <h1>Calculador de IMC</h1>
+       <label for="altura">Altura:</label>
+       <input type="number" placeholder="Ex: 173 (1,73m)" id="altura">
+       <label for="peso">Peso:</label>
+       <input type="number" placeholder="Ex: 70 (70kg)" id="peso">
+       <input type="button" id="calculo" value="Calcular">
+   </form>
+</div>
+  
+
+  
+
+
+
+   <script src="./js/imc.js"></script>
+    <script src="./js/menu.js" defer></script>
+    <script src="./js/slider.js" defer></script>
+   
+</body>
+<footer>
+   <div class="footer-container">
+      <div class="footer-heading">
+         <div class="footer-heading footer-1">
+         </div>
+         <br>
+        <div class="footer-heading footer-2">
+            <h2>Colaboradores do Projeto</h2>
+            <a>Brendon Augusto de Souza Nogueira</a>
+            <a>Eduardo Faria Caetano Silva</a><br><br> 
+         
+         </div>
+         <div class="footer-heading footer-3">
+            <h2>Social e Contato</h2>
+            
+            <a href="https://www.linkedin.com/in/brendon-nogueira-7b95151b6/"><b>LinkedIn: </b>Brendon Nogueira</a>
+            <a href="https://www.linkedin.com/in/eduardo-faria-23405b200/"><b>LinkedIn: </b>Eduardo Faria</a>
+            <a><b>Tel: </b>(35)98431-6789</a>
+            <a><b>Tel: </b>(35)9888-6705</a>
+            <br><br>
+      </div>
+      <div class="email-footer-form">
+         <h2>Join our Newsletter</h2>
+         <input type="email" placeholder="enter your email" id="footer-email">
+         <input type="submit" value="Sign Up" id="footer-email-btn">
+      </div>
+   </div>
+  
+               
+</footer>
+
+</html>

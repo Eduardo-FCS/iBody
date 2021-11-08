@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: #E7DFDD;
+    box-sizing: border-box;
+}
+
+.content{
+    background-color: #0e0b16;
+}
+
+.imc{
+    background-color: #0e0b16;
+
+      
+}
+
+.imc ::placeholder,
+.imc ::-webkit-input-placeholder{
+    color: black
+}
+
