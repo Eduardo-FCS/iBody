@@ -46,6 +46,22 @@ a:hover {
   display: none;
 }
 
+section .hiperlink {
+  font-family: sans-serif;
+  font-style: oblique;
+  color: black;
+}
+
+#calculo {
+    font-family: sans-serif;
+    color: black;
+}
+
+#footer-email-btn {
+    font-family: sans-serif;
+    color: black;
+}
+
 @media (max-width: 600px) {
   #menu {
     display: block;
