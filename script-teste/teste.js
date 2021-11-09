@@ -25,8 +25,12 @@ async function start(){
         //Teste do calculador de IMC
         random = getRandomInt(100, 210)
         await driver.findElement(By.id("altura")).sendKeys(random, Key.TAB);
+        console.log("A altura inserida randômicamente foi" + random + "cm");
+
         random = getRandomInt(35, 190)
         await driver.findElement(By.id("peso")).sendKeys(random, Key.TAB);
+        console.log("O peso inserido randômicamente foi" + random + "kg");
+        
         await driver.findElement(By.id("calculo")).sendKeys(Key.ENTER);
 
         console.log("Teste finalizado com sucesso!");
