@@ -52,9 +52,19 @@ section .hiperlink {
   color: black;
 }
 
-#calculo {
-    font-family: sans-serif;
-    color: black;
+#altura,
+ #peso{
+     font-family: sans-serif;
+     color: black;
+    border: #4717F6 solid;
+    border-radius: 5px;
+}
+
+form #calculo{
+  border-radius: 4px;
+ background-color: #4717F6;
+ font-family: sans-serif;
+ color: white;
 }
 
 #footer-email-btn {

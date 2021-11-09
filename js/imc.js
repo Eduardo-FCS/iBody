@@ -10,7 +10,7 @@ let calculaIMC = event => {
         altura = altura / 100 //Conversão da altura de centímetros para metros
         let result = peso / (altura * altura)
         if (result <= 18.5) {
-            alert('O IMC calculado é igual a ' + result.toFixed(1) + '. Segundo a Organização Mundial da Saúde (OMS), indica magreza.')
+            alert('O IMC calculado é igual a ' + result.toFixed(1) + '. Segundo a Organização Mundial da Saúde (OMS), indica situação abaixo do peso.')
         } else if(result <= 24.9) {
             alert('O IMC calculado é igual a ' + result.toFixed(1) + '. Segundo a Organização Mundial da Saúde (OMS), indica situação estável.')
         } else if(result <= 29.9) {
