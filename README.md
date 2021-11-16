@@ -7,8 +7,8 @@ Esta sendo desenvolvido por alunos do curso de Sistemas de Informação do quart
 
 # Alunos
 
-    -> Brendon Augusto Souza Nogueira
-    -> Eduardo Faria Caetano Silva
+    • Brendon Augusto Souza Nogueira
+    • Eduardo Faria Caetano Silva
 
 # Professor
 
