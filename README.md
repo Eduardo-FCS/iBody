@@ -12,7 +12,9 @@ Esta sendo desenvolvido por alunos do curso de Sistemas de Informação do quart
 
 # Professor
 
-    -> Roberto Ribeiro Rocha
+    • Roberto Ribeiro Rocha
+    • Rodrigo Luis de Faria
+    • Renan Camilo Barbosa
 
 # URL
 
