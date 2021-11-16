@@ -1,31 +1,38 @@
-function start() {
-    const calcula = document.getElementById('calculo')
-    calcula.onclick = calculaIMC 
+const start = () => {
+    const calcular = document.getElementById('calcular')
+    calcular.onclick = calculaIMC
 }
 
-let calculaIMC = event => {
-    let altura = document.getElementById('altura').value
-    let peso = document.getElementById('peso').value
-    if(altura >= 100 && peso >= 40) {
-        altura = altura / 100 //Conversão da altura de centímetros para metros
-        let result = peso / (altura * altura)
-        if (result <= 18.5) {
-            alert('O IMC calculado é igual a ' + result.toFixed(1) + '. Segundo a Organização Mundial da Saúde (OMS), indica situação abaixo do peso.')
-        } else if(result <= 24.9) {
-            alert('O IMC calculado é igual a ' + result.toFixed(1) + '. Segundo a Organização Mundial da Saúde (OMS), indica situação estável.')
-        } else if(result <= 29.9) {
-            alert('O IMC calculado é igual a ' + result.toFixed(1) + '. Segundo a Organização Mundial da Saúde (OMS), indica sobrepeso.')
-        } else if(result <= 39.9) {
-            alert('O IMC calculado é igual a ' + result.toFixed(1) + '. Segundo a Organização Mundial da Saúde (OMS), indica obesidade.')
-        } else {
-            alert('O IMC calculado é igual a ' + result.toFixed(1) + '. Segundo a Organização Mundial da Saúde (OMS), indica obesidade grave.')
+function calculaIMC () {
+    let altura = document.getElementById('altura').value;
+    let peso = document.getElementById('peso').value;
+    let resultado = document.getElementById('resultado');
+
+    if (altura !== '' && peso !== '') {
+        altura = altura / 100
+        let valorIMC = peso / (altura * altura)
+        let classificacao = '';
+
+        if (valorIMC < 18.5){
+            classificacao = 'abaixo do peso';
+        }else if (valorIMC < 25) {
+            classificacao = 'peso ideal';
+        }else if (valorIMC < 30){
+            classificacao = 'acima do peso';
+        }else if (valorIMC < 35){
+            classificacao = 'obesidade grau I';
+        }else if (valorIMC < 40){
+            classificacao = 'obesidade grau II';
+        }else {
+            classificacao = 'obesidade grau III';
         }
-    } else {
-        alert("Valores de peso e/ou altura inválidos")
+
+        resultado.textContent = "O IMC é " + valorIMC.toFixed(1) + " e está como "+ classificacao;
+        
+    }else {
+        resultado.textContent = 'Preencha todos os campos!';
     }
-    //Limpa os campos de altura e peso da página
-    document.getElementById('altura').value = ''
-    document.getElementById('peso').value = ''
+
 }
 
 start()

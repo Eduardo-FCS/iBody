@@ -63,14 +63,14 @@
 }
 
 #footer-email::placeholder{
-    color:  #626163;
+    color:  #0e0b16;
 }
 
 #footer-email-btn{
     width: 100px;
     height: 40px;
     border-radius: 4px;
-    background-color: #FFDB58;
+    background-color: #4717F6;
     outline: none;
     border: none;
     font-size: 1rem;

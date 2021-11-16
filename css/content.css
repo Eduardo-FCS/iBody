@@ -3,21 +3,105 @@
     padding: 0;
     font-family: sans-serif;
     color: #E7DFDD;
+
+}
+
+.content
+{
+    background-color: #0e0b16;
+}
+
+main{
+    background-color: #0e0b16;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  .container{
+    display: flex;
+    flex-direction: column;
+    background:#4717F6;
+    width: 400px;
+    height: 600px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    box-shadow: 0 0 10px black;
+  }
+  
+  .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    font: bold 2.5rem serif;
+    border-bottom: solid 5px black;
+    margin-bottom: 20px;
+  }
+  
+  .input {
+    display: flex;
+    width: 300px;
+    height: 50px;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .input input {
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    border:none;
+    outline: 0;
+    font: bold 1.5rem serif;
+    text-align: center;
+  }
+  
+  .input label {
+    font: bold 1.5rem serif;
+  }
+  
+  button{
+    width: 300px;
+    height: 40px;
+    font: bold 1.2rem serif;
+    background: #000;
+    color:  #E7DFDD;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .result{
+    font-family: sans-serif;
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    width: 300px;
+    height: 150px;
+    border-radius: 5px;
+    font: italic 1.5rem serif;
+    box-shadow: 0px 0px 10px black;
+    background: #000;
+    color: #E7DFDD;
+    padding: 20px;
     box-sizing: border-box;
-}
+    user-select: none;
+  }
 
-.content{
-    background-color: #0e0b16;
-}
+  #altura,
+  #peso {
+      font-family: sans-serif;
+      color: rgba(3, 3, 3, 0.904);
+ }
 
-.imc{
-    background-color: #0e0b16;
-
-      
-}
-
-.imc ::placeholder,
-.imc ::-webkit-input-placeholder{
-    color: black
-}
-
+ #altura::placeholder,
+ #peso::placeholder {
+    font-family: sans-serif;
+    color: rgb(207, 207, 207);
+ }
+ 
